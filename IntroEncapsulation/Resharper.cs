@@ -8,6 +8,9 @@
          *  - Inline Variable  CTRL-R CTRL-I
          *  - Extract Method   CTRL-R CTRL-M
          *  - Extract Class
+         *  
+         *  - Rename           CTRL-R CTRL-R
+         *  - Ny klasse        ALT+SHIFT+C
          *
          */
 
