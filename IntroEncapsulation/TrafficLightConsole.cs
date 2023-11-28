@@ -1,10 +1,10 @@
 ﻿namespace IntroEncapsulation
 {
-    internal class TrafficLightConsole
+    class TrafficLightConsole
     {
         public static void Write(bool isRedOn, bool isYellowOn, bool isGreenOn)
         {
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("┏━┓");
             DrawLine(isRedOn ? ConsoleColor.Red : ConsoleColor.DarkGray);
             DrawLine(isYellowOn ? ConsoleColor.Yellow : ConsoleColor.DarkGray);
