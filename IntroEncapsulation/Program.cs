@@ -1,17 +1,21 @@
 ﻿using System.Text;
 using IntroEncapsulation;
 
-
-// Pause til 10:34
-
 Console.OutputEncoding = Encoding.UTF8;
+
+// Pause til 11:05
 
 var trafficLight = new TrafficLight();
 
-while (true)
+var showRedCount = 10;
+while (showRedCount>0)
 {
     Console.Clear();
     trafficLight.Show();
-    Console.ReadKey();
+    if (trafficLight.IsFirstPhase)
+    {
+        showRedCount--;
+    }
+    Thread.Sleep(500);
     trafficLight.Next();
 }
